@@ -1,0 +1,159 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.bye.hi.testgame.bedroom"
+    android:background="@drawable/bedbgsmall">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/poster"
+        android:src="@drawable/postersmall"
+        android:background="@null"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="48dp"
+        android:layout_marginStart="48dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/window"
+        android:src="@drawable/windowsmall"
+        android:background="@null"
+        android:layout_alignRight="@+id/bed"
+        android:layout_alignEnd="@+id/bed"
+        android:layout_alignTop="@+id/poster" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bed"
+        android:src="@drawable/thebed"
+        android:background="@null"
+        android:layout_below="@+id/window"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="65dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/books"
+        android:src="@drawable/bookssmall"
+        android:background="@null"
+        android:layout_below="@+id/heart3bed"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/hintTextBed"
+        android:layout_above="@+id/hintButtonBed"
+        android:layout_alignRight="@+id/bed"
+        android:layout_alignEnd="@+id/bed"
+        android:focusable="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/bed" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hint"
+        android:id="@+id/hintButtonBed"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/poster"
+        android:layout_alignStart="@+id/poster" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/heart1bed"
+        android:src="@drawable/heart45"
+        android:layout_alignParentTop="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/halfheart1bed"
+        android:src="@drawable/halfheart45"
+        android:layout_above="@+id/portrait"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/heart2bed"
+        android:src="@drawable/heart45"
+        android:layout_below="@+id/heart1bed"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:visibility="visible" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/halfheart2bed"
+        android:src="@drawable/halfheart45"
+        android:visibility="invisible"
+        android:layout_alignTop="@+id/heart2bed"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:focusable="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/heart3bed"
+        android:src="@drawable/heart45"
+        android:layout_below="@+id/heart2bed"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:visibility="visible" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/halfheart3bed"
+        android:src="@drawable/halfheart45"
+        android:visibility="invisible"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_below="@+id/heart2bed"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/hintDispBed"
+        android:autoText="false"
+        android:singleLine="false"
+        android:visibility="visible"
+        android:textSize="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/window"
+        android:layout_toStartOf="@+id/window"
+        android:layout_below="@+id/hintTextBed"
+        android:paddingTop="6dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/levelUpBed"
+        android:src="@drawable/arrow"
+        android:background="@null"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/hintTextBed"
+        android:layout_alignEnd="@+id/hintTextBed"
+        android:visibility="invisible" />
+</RelativeLayout>
